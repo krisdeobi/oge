@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #2D2D2D;
+    line-height: 1.6;
+    background-color: #F4F3F1;
+    padding-top: 70px; 
+
+}
+/* Навигация */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    border-bottom: 1px solid #2D2D2D;
+    background-color: #2D2D2D; /* Добавляем фон, чтобы контент не просвечивал под меню */
+    
+    /* Делаем шапку зафиксированной */
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; 
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #F4F3F1;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+
+
+
+.catalog-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    gap: 40px;
+    padding: 0 5%;
+}
+
+.task-menu {
+    width: 250px;
+    border-right: 1px solid #F4F3F1;
+}
+
+.task-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.task-list button {
+    padding: 10px;
+    text-align: left;
+    background: none;
+    border: 1px solid #eee;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.task-list button:hover {
+    background: #f9f9f9;
+    border-color: #2D2D2D;
+}
+
+.task-display {
+    flex: 1;
+    padding: 20px;
+    background: #fff;
+}
+
+.answer-area {
+    margin: 30px 0;
+}
+
+.answer-area input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+}
+
+.result-box {
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.explanation-box {
+    padding: 20px;
+    background: #f0f7ff;
+    border-left: 5px solid #d3dffd;
+}
+
+.topics-section {
+    padding: 100px 5%;
+    background-color: #fff;
+}
+
+.topics-section h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #888;
+    margin-bottom: 50px;
+}
+
+.topics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.topic-card {
+    text-decoration: none;
+    color: inherit;
+    padding: 30px;
+    border: 1px solid #eee;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.topic-card:hover {
+    border-color: #1a1a1a;
+    transform: translateY(-5px);
+}
+
+.task-num {
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    color: #888;
+}
+
+.topic-card h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.topic-card p {
+    font-size: 0.95rem;
+    color: #666;
+    flex-grow: 1;
+}
+
+.go-link {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тренажёр ОГЭ</title>
+    <link rel="stylesheet" href="stylecatalog.css">
+</head>
+<body>
+
+  <header class="navbar">
+        <div class="logo">ОГЭ МАТЕМАТИКА</div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">главная страница</a></li>
+                <li><a href="../exam/about.html">об экзамене</a></li>
+                <li> <a href="../exam/справочник.pdf">справочник</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="catalog-container">
+        <aside class="task-menu">
+            <h3>Задания 12</h3>
+            <div class="task-list">
+                <button onclick="loadTask(1)">Задание №1</button>
+                <button onclick="loadTask(2)">Задание №2</button>
+                <button onclick="loadTask(3)">Задание №3</button>
+                </div>
+        </aside>
+
+        <section class="task-display" id="task-display">
+            <div id="task-placeholder">
+                <h2>Выберите номер задания слева, чтобы начать практику.</h2>
+            </div>
+            
+            <div id="active-task" style="display:none;">
+                <h2 id="task-title">Задание №</h2>
+                <p id="task-text">Текст задания появится здесь...</p>
+                
+                <div class="answer-area">
+                    <input type="text" id="user-answer" placeholder="Ваш ответ">
+                    <button onclick="checkAnswer()" class="btn">Проверить</button>
+                </div>
+
+                <div id="result" class="result-box"></div>
+                <div id="explanation" class="explanation-box" style="display:none;">
+                    <strong>Объяснение:</strong> <span id="exp-text"></span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="scripttask12.js"></script>
+</body>
+</html>
